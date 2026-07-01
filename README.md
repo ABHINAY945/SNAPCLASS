@@ -116,6 +116,8 @@ Traditional attendance systems suffer from:
 SnapClass solves these problems by combining **Computer Vision** and **Speaker Recognition** to automate attendance while providing a smooth user experience through an intuitive web interface.
 
 ---
+
+
 # 🏗️ System Architecture
 
 ```text
