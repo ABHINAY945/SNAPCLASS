@@ -512,3 +512,413 @@ SNAPCLASS
 - Session-based authentication using Streamlit Session State
 
 ---
+
+# 🚀 Getting Started
+
+Follow these steps to run SnapClass locally.
+
+---
+
+## 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/ABHINAY945/SnapClass.git
+cd SnapClass
+```
+
+---
+
+## 2️⃣ Create a Virtual Environment
+
+### Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+## 3️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 4️⃣ Configure Supabase
+
+Create the following file:
+
+```
+.streamlit/secrets.toml
+```
+
+Add your Supabase credentials:
+
+```toml
+SUPABASE_URL="YOUR_SUPABASE_URL"
+SUPABASE_KEY="YOUR_SUPABASE_ANON_KEY"
+```
+
+> ⚠️ Never commit `secrets.toml` to GitHub.
+
+---
+
+## 5️⃣ Run the Application
+
+```bash
+streamlit run app.py
+```
+
+The application will start on:
+
+```
+http://localhost:8501
+```
+
+---
+
+# 📖 Usage Guide
+
+## 👨‍🏫 Teacher
+
+### Register
+
+- Create a teacher account.
+- Login using your username and password.
+
+### Create Subject
+
+- Click **Create Subject**
+- Enter:
+  - Subject Code
+  - Subject Name
+  - Section
+
+### Share Class
+
+Generate:
+
+- Subject Code
+- Join Link
+- QR Code
+
+Students can join using any of these.
+
+---
+
+### Face Attendance
+
+1. Select Subject
+2. Capture classroom photos OR upload images
+3. Run AI Face Analysis
+4. Review attendance
+5. Save attendance
+
+---
+
+### Voice Attendance
+
+1. Select Subject
+2. Record classroom audio
+3. Analyze audio
+4. Review identified students
+5. Save attendance
+
+---
+
+## 👨‍🎓 Student
+
+### Login
+
+Open Student Portal.
+
+Capture your face.
+
+If recognized:
+
+- Login successful.
+
+Otherwise:
+
+- Register new profile.
+
+---
+
+### Registration
+
+Provide:
+
+- Name
+- Face Image
+- (Optional) Voice Sample
+
+SnapClass automatically creates your profile.
+
+---
+
+### Enroll in Subject
+
+You can join using:
+
+- Subject Code
+- Shared Link
+- QR Code
+
+---
+
+### Dashboard
+
+Students can
+
+- View enrolled subjects
+- View attendance statistics
+- Unenroll from courses
+
+---
+
+# 📸 Screenshots
+
+> Add screenshots inside an **assets/** folder.
+
+```
+assets/
+│
+├── home.png
+├── teacher_dashboard.png
+├── student_dashboard.png
+├── create_subject.png
+├── face_attendance.png
+├── voice_attendance.png
+├── attendance_report.png
+└── qr_join.png
+```
+
+---
+
+## Home Page
+
+![Home](assets/home.png)
+
+---
+
+## Teacher Dashboard
+
+![Teacher Dashboard](assets/teacher_dashboard.png)
+
+---
+
+## Student Dashboard
+
+![Student Dashboard](assets/student_dashboard.png)
+
+---
+
+## Face Attendance
+
+![Face Attendance](assets/face_attendance.png)
+
+---
+
+## Voice Attendance
+
+![Voice Attendance](assets/voice_attendance.png)
+
+---
+
+## Attendance Report
+
+![Attendance Report](assets/attendance_report.png)
+
+---
+
+## QR Code Enrollment
+
+![QR Join](assets/qr_join.png)
+
+---
+
+# 🎯 Project Highlights
+
+✅ AI-powered Face Authentication
+
+✅ AI-powered Voice Attendance
+
+✅ QR Code Enrollment
+
+✅ Join Link Enrollment
+
+✅ Classroom Image Processing
+
+✅ Multiple Image Attendance
+
+✅ Speaker Recognition
+
+✅ Attendance Analytics
+
+✅ Automatic Classifier Training
+
+✅ Cloud Database Integration
+
+✅ Modern Dashboard UI
+
+---
+
+# 🌐 Deployment
+
+### Live Application
+
+```
+https://your-streamlit-app.streamlit.app
+```
+
+---
+
+### Demo Video
+
+```
+https://youtu.be/your-demo-video
+```
+
+---
+
+### GitHub Repository
+
+```
+https://github.com/ABHINAY945/SnapClass
+```
+
+---
+
+# 📈 Future Improvements
+
+- 📊 Attendance Analytics Dashboard
+- 📈 Attendance Graphs
+- 📄 Export Attendance to PDF
+- 📥 Export Attendance to Excel
+- 📧 Email Notifications
+- 📱 Mobile Responsive Interface
+- 🎥 Video-based Attendance
+- 🌍 Multi-language Support
+- 🧑‍💼 Admin Dashboard
+- 🔔 Push Notifications
+- 🧠 Deep Learning Face Recognition (FaceNet / ArcFace)
+- ☁️ Docker Deployment
+- 📅 Timetable Integration
+- 📍 GPS-Based Attendance Verification
+- 🧾 Attendance Certificates
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+
+2. Create a new branch
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push the branch
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request
+
+---
+
+# 🐞 Known Limitations
+
+- Face recognition performance depends on image quality.
+- Voice recognition accuracy decreases in noisy environments.
+- Internet connectivity is required for database synchronization.
+- Large classrooms may require multiple images for better accuracy.
+
+---
+
+# 📚 Acknowledgements
+
+This project uses several amazing open-source libraries:
+
+- Streamlit
+- Supabase
+- dlib
+- face_recognition_models
+- Resemblyzer
+- Librosa
+- Scikit-learn
+- Pillow
+- NumPy
+- Pandas
+- bcrypt
+- Segno
+
+Huge thanks to the maintainers of these projects.
+
+---
+
+# 👨‍💻 Author
+
+### Abhinay Srivastava
+
+B.Tech Information Technology
+
+IIIT Bhopal
+
+📧 Email
+
+```
+abhinay.soft06@gmail.com
+```
+
+💼 LinkedIn
+
+```
+https://www.linkedin.com/in/abhinay-srivastava-bb0206290/
+```
+
+🐙 GitHub
+
+```
+https://github.com/ABHINAY945
+```
+
+---
+
+# ⭐ Support
+
+If you found this project useful,
+
+please consider giving it a ⭐ on GitHub.
+
+It helps others discover the project and motivates further development.
+
+---
+
+<div align="center">
+
+### 🚀 Built with Python, Streamlit, Machine Learning & ❤️
+
+**SnapClass — Making Attendance Faster using Artificial Intelligence**
+
+</div>
