@@ -779,7 +779,7 @@ assets/
 ### Live Application
 
 ```
-https://your-streamlit-app.streamlit.app
+https://snapclass-genz-coders.streamlit.app/
 ```
 
 ---
